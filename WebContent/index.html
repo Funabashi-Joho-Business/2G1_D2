@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>システム開発 </title>
+<title>システム開発</title>
 <meta name="author" content="">
 <meta name="description" content="">
 <meta name="keywords" content="">
@@ -10,64 +10,56 @@
 <link rel="stylesheet" href="css/02_nomalize.css">
 <!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 <script>
-function move(e)
-{
-	var output = document.querySelector("#output");
-	var img = document.querySelector("#img");
-	var x = parseInt(e.clientX) - parseInt(img.offsetLeft);
-	var y = parseInt(e.clientY) - parseInt(img.offsetTop);
-	output.innerHTML = x + "," +  y;
-}
+	function move(e) {
+		var output = document.querySelector("#output");
+		var img = document.querySelector("#img");
+		var x = parseInt(e.clientX) - parseInt(img.offsetLeft);
+		var y = parseInt(e.clientY) - parseInt(img.offsetTop);
+		output.innerHTML = x + "," + y;
+	}
 </script>
 </head>
 <body>
+	<div id="header">
+			<span id="kids">こども</span>のためのにほんちず
+	</div>
+
+	<div id="output">aaaaaa</div>
+	<img id="img" src="hiragana_color_big.gif" alt="写真" width="950"
+		usemap="hiragana_color_big.gif" onmousemove="move(event);">
+	<map name="hiragana_color_big.gif">
+		<area shape="rect" coords="300,480,1704,920"
+			href="http://www.ammanu.edu.jo/wiki1/ja/articles/%E3%83%A6/%E3%83%BC/%E3%83%A9/%E3%83%A6%E3%83%BC%E3%83%A9%E3%82%B7%E3%82%A2%E5%A4%A7%E9%99%B8.html"
+			alt="四角形" target="_blank">
+		<area shape="rect" coords="193,1009,529,1636"
+			href="file:///I:/%E4%B8%96%E7%95%8C%E5%9C%B0%E5%9B%B3%E3%80%80%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E9%96%8B%E7%99%BA/index2.html"
+			alt="四角形" target="_blank">
+		<area shape="rect" coords="1463,1492,1829,1735" href="link_rect.html"
+			alt="四角形" target="_blank">
+		<area shape="rect" coords="2283,384,3370,1159" href="link_rect.html"
+			alt="四角形" target="_blank">
+		<area shape="rect" coords="3163,1228,3640,1900" href="link_rect.html"
+			alt="四角形" target="_blank">
+		<area shape="rect" coords="703,1450,769,1603"
+			href="https://www.bungie.net/ja/" alt="四角形" target="_blank">
+		<area shape="rect" coords="2024,1696,2172,1836"
+			href="http://www.1pondo.tv/?agecheck=no" alt="四角形" target="_blank">
 
 
-<div id="header">
-<h1><span class="a">こども</span>のためのにほんちず</h1>
 
-</div>
+	</map>
 
-<div id ="output">aaaaaa</div>
-<img id="img" src="hiragana_color_big.gif" alt="写真" width="3200" height="1700"usemap="#I:\世界地図　システム開発\hiragana_color_big.gif" onmousemove="move(event);">
-<map name="b000301yzm.02.jpg">
- <area shape="rect"
-  coords="300,480,1704,920"
-  href="http://www.ammanu.edu.jo/wiki1/ja/articles/%E3%83%A6/%E3%83%BC/%E3%83%A9/%E3%83%A6%E3%83%BC%E3%83%A9%E3%82%B7%E3%82%A2%E5%A4%A7%E9%99%B8.html" alt="四角形" target="_blank">
-  <area shape="rect"
-  coords="193,1009,529,1636"
-  href="file:///I:/%E4%B8%96%E7%95%8C%E5%9C%B0%E5%9B%B3%E3%80%80%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E9%96%8B%E7%99%BA/index2.html" alt="四角形" target="_blank">
-  <area shape="rect"
-  coords="1463,1492,1829,1735"
-  href="link_rect.html" alt="四角形" target="_blank">
-  <area shape="rect"
-  coords="2283,384,3370,1159"
-  href="link_rect.html" alt="四角形" target="_blank">
-  <area shape="rect"
-  coords="3163,1228,3640,1900"
-  href="link_rect.html" alt="四角形" target="_blank">
-   <area shape="rect"
-  coords="703,1450,769,1603"
-  href="https://www.bungie.net/ja/" alt="四角形" target="_blank">
-     <area shape="rect"
-  coords="2024,1696,2172,1836"
-  href="http://www.1pondo.tv/?agecheck=no" alt="四角形" target="_blank">
+	<div id="contents">
+	
+	</div>
 
- 
- 
-</map>
+	<form method="get" action="#" class="search">
 
-<div id="contents">
+		<div>
+			<input type="text" name="example" class="textBox"> <input type="submit" value="検索" class="btn">
+		</div>
 
-</div>
-
-<form method="get" action="#" class="search">
-
-<div>
-<input type="text" name="example" class="textBox"><input type="submit" value="検索" class="btn">
-</div>
-
-</form>
+	</form>
 
 
 </body>

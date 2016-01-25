@@ -1,101 +1,95 @@
-	body{
+body {
 	background-color: #FFFFFF;
-     
-
+	position: relative;
 }
 
-h1{
- 	font-size:60px;
-	color:#000000;
+#header {
+	font-size: 50px;
+	color: #000000;
+	position: absolute;
 }
 
-span.a{
-	font-size:120px;
-	color:#fff100;
-   display:inline-block;
-    background-image: -webkit-gradient(linear, left top, right top,
-    color-stop( 0%,  #FF6633),
-    color-stop( 14%, #FF6928),
-    color-stop( 28%, #FFFF88),
-    color-stop( 42%, #00FF66),
-    color-stop( 56%, #33CCFF),
-    color-stop( 70%, #99FFFF),
-    color-stop( 84%, #CC66FF),
-    color-stop(100%, #FF3300)
-    );
-    -webkit-background-clip:text;
-    color:transparent;
-    
-    -webkit-animation:rainbow 10s linear infinite alternate;
+#kids {
+	font-size: 50px;
+	color: #fff100;
+	display: inline-block;
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #FF6633),
+		color-stop(14%, #FF6928), color-stop(28%, #FFFF88),
+		color-stop(42%, #00FF66), color-stop(56%, #33CCFF),
+		color-stop(70%, #99FFFF), color-stop(84%, #CC66FF),
+		color-stop(100%, #FF3300));
+	-webkit-background-clip: text;
+	color: transparent;
+	-webkit-animation: rainbow 10s linear infinite alternate;
 }
-	}
 
-	
-
-
+#output {
+	position: absolute;
+	top: 60px;
+}
 
 a {
-font-size:0.75em;
-display:block;
-width:100px;
-padding-top:10px;
-padding-bottom:10px;
-text-align:center;
-border:2px solid;
-border-color:#aaaaaa #444444 #444444 #aaaaaa;
-background:#cccccc;
+	font-size: 0.75em;
+	display: block;
+	width: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	border: 2px solid;
+	border-color: #aaaaaa #444444 #444444 #aaaaaa;
+	background: #cccccc;
 }
 
-a:hover{
-background:#ffffff;
+a:hover {
+	background: #ffffff;
 }
 
-h3{
-font-size:0.75em;
-display:block;
-width:100px;
-padding-top:10px;
-padding-bottom:10px;
-text-align:center;
-border:2px solid;
-border-color:#aaaaaa #444444 #444444 #aaaaaa;
-background:#cccccc;
+h3 {
+	font-size: 0.75em;
+	display: block;
+	width: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	border: 2px solid;
+	border-color: #aaaaaa #444444 #444444 #aaaaaa;
+	background: #cccccc;
 }
 
-h3:hover{
-background:#ffffff;
+h3:hover {
+	background: #ffffff;
 }
 
 form.search {
-margin: 0;
+	margin: 0;
 }
 
 /* --- ボックス --- */
 form.search div {
-width: 388px; /* ボックスの幅 */
-padding: 1px 0; /* ボックスのパディング（上下、左右） */
-background-color: #ffffff; /* ボックスの背景色 */
-border: 1px #808080 solid; /* ボックスの境界線 */
+	width: 388px; /* ボックスの幅 */
+	padding: 1px 0; /* ボックスのパディング（上下、左右） */
+	background-color: #ffffff; /* ボックスの背景色 */
+	border: 1px #808080 solid; /* ボックスの境界線 */
 }
 
 /* --- テキストボックス --- */
 form.search input.textBox {
-width: 298px; /* テキストボックスの幅 */
-margin: 0 4px 0 5px; /* テキストボックスのマージン（上右下左） */
-padding: 0;
-background-color: #ffffff; /* テキストボックスの背景色 */
-border: none; /* テキストボックスの境界線（なし） */
-color: #000000;
+	width: 298px; /* テキストボックスの幅 */
+	margin: 0 4px 0 5px; /* テキストボックスのマージン（上右下左） */
+	padding: 0;
+	background-color: #ffffff; /* テキストボックスの背景色 */
+	border: none; /* テキストボックスの境界線（なし） */
+	color: #000000;
 }
 
 /* --- ボタン --- */
 form.search input.btn {
-width: 80px; /* ボタンの幅 */
-height: 1.8em; /* ボタンの高さ */
-padding: 0;
-background: #c08000 url(btn05.gif); /* ボタンの背景 */
-border: 1px #c08000 inset; /* ボタンの境界線 */
-font-weight: bold;
-color: #000000;
-letter-spacing: 0.3em; /* 文字間のスペース */
+	width: 80px; /* ボタンの幅 */
+	height: 1.8em; /* ボタンの高さ */
+	padding: 0;
+	background: #c08000 url(btn05.gif); /* ボタンの背景 */
+	border: 1px #c08000 inset; /* ボタンの境界線 */
+	font-weight: bold;
+	color: #000000;
+	letter-spacing: 0.3em; /* 文字間のスペース */
 }
